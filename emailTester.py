@@ -1,31 +1,10 @@
-# import smtplib, ssl
-
-# port = 465  # For SSL
-# password = input("Type your password and press enter: ")
-
-# # Create a secure SSL context
-# context = ssl.create_default_context()
-
-# with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-#     server.login("ooduemailtest@gmail.com", password)
-    
-#     sender_email = "ooduemailtest@gmail.com"
-#     receiver_email = "gubba.ricky@gmail.com"
-#     message = """\
-#     Subject: Hi there
-
-#     This message is sent from Python."""
-
-#     # Send email here
-#     server.sendmail(sender_email, receiver_email, message)
-
 import smtplib
 from email.mime.text import MIMEText
 
 subject = "Test 1"
 body = "First Test!"
 sender = "ooduemailtest@gmail.com"
-recipients = ["gubba.ricky@gmail.com"] #Add your email here
+recipients = ["youremail@gmail.com"] #Add your email here
 password = "" #Add the App Password here
 
 
